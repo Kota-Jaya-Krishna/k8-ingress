@@ -52,7 +52,7 @@ spec:
   ingressClassName: alb
   rules:
   - host: "app1.learndevopsacademy.online"
-  - http:
+     http:
       paths:
       - pathType: Prefix
         path: "/"
