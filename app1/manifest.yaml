@@ -27,7 +27,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: app1-service
+  name: app1
 spec:
   selector:     #labels are used as selectors
     app: app1
@@ -58,6 +58,6 @@ spec:
         path: "/"
         backend:
           service:
-            name: app1-service
+            name: app1
             port:
               number: 80
