@@ -41,13 +41,13 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: minimal-ingress
+  name: app1
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:688567281358:certificate/b047d620-3288-424c-aa42-eaccebedd300
-    alb.ingress.kubernetes.io/group.name: learndevops
+    alb.ingress.kubernetes.io/group.name: joindeveops
 spec:
   ingressClassName: alb
   rules:
